@@ -1,0 +1,28 @@
+{
+  "name": "amazon-asin",
+  "version": "0.9.0",
+  "description": "An efficient way to extract Amazon ASIN and ISBN from Amazon liks. Supports Amazon premalinks (short URLs) and does everything once, not twice.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "amazon",
+    "asin",
+    "isbn",
+    "uid",
+    "link",
+    "links",
+    "url",
+    "redirect",
+    "permalink",
+    "permalinks",
+    "short",
+    "shortened"
+  ],
+  "author": "Nitzan Weidenfeld",
+  "license": "ISC",
+  "dependencies": {
+    "parse-domain": "^1.1.0"
+  }
+}
