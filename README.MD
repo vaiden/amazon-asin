@@ -9,7 +9,6 @@
 ```
 npm install amazon-asin --save
 ```
-
 ## Usage
 
 #### Sync
