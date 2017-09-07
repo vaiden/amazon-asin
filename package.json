@@ -1,6 +1,6 @@
 {
   "name": "amazon-asin",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "An efficient way to extract Amazon ASIN and ISBN from Amazon liks. Supports Amazon premalinks (short URLs) and does everything once, not twice.",
   "main": "index.js",
   "scripts": {
