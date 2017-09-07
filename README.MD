@@ -41,6 +41,8 @@ Returns a *Promise* that would resolve to:
 }
 ```
 
+Run the example [->](https://runkit.com/embed/t5e0u7wq98gi)
+
 ## The fine print
 
 * For parsing permalinks please use the async method, since permalinks are basically HTTP 301 redirects.
