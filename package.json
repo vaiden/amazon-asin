@@ -23,6 +23,7 @@
   "author": "Nitzan Weidenfeld",
   "license": "ISC",
   "dependencies": {
-    "parse-domain": "^1.1.0"
+    "parse-domain": "^1.1.0",
+    "resolve-redirect": "0.0.3"
   }
 }
