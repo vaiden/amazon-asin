@@ -25,5 +25,9 @@
   "dependencies": {
     "parse-domain": "^1.1.0",
     "resolve-redirect": "0.0.3"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/vaiden/amazon-asin.git"
   }
 }
