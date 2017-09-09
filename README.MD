@@ -43,14 +43,13 @@ Returns a *Promise* that would resolve to:
 
 Run the example [->](https://runkit.com/embed/t5e0u7wq98gi)
 
-## Join us on GitHub: https://github.com/vaiden/amazon-asin
-
 ## The fine print
 
 * For parsing permalinks please use the async method, since permalinks are basically HTTP 301 redirects.
 * You may also pass raw ASIN/ISBN numbers as arguments.
 * No exception is thrown on an invalid argument. The resulting object would simply contain *undefined*s.
 * Heavily influenced by [amazon-helpers](https://www.npmjs.com/package/amazon-helpers).
+* Join us on GitHub: https://github.com/vaiden/amazon-asin
 
 ## License
 
