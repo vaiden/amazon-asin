@@ -1,10 +1,10 @@
 {
   "name": "amazon-asin",
   "version": "0.9.3",
-  "description": "An efficient way to extract Amazon ASIN and ISBN from Amazon liks. Supports Amazon premalinks (short URLs) and does everything once, not twice.",
+  "description": "An efficient way to extract Amazon ASIN and ISBN from Amazon links. Supports Amazon premalinks (short URLs) and does everything once, not twice.",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "mocha"
   },
   "keywords": [
     "amazon",
@@ -29,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/vaiden/amazon-asin.git"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.1"
   }
 }
