@@ -50,7 +50,7 @@ var asinParser = {
             return encapsulateReturn(urlOrPlainId);
         }
 
-        var parsed = urlOrPlainId.match(/https?:\/\/(www\.)?(.*)amazon\.([a-z\.]{2,5})(\/d\/(.*)|\/(.*)\/?(?:dp|o|gp|-)\/)(aw\/d\/|product\/)?(B[0-9]{2}[0-9A-Z]{7}|[0-9]{9}(?:X|[0-9]))/);
+        var parsed = urlOrPlainId.match(/https?:\/\/(www\.)?(.*)amazon\.([a-z\.]{2,5})(\/d\/(.*)|\/(.*)\/?(?:dp|o|gp|-)\/)(aw\/d\/|product\/)?(B[0-9]{2}[0-9A-Z]{7}|[0-9]{9}(?:X|[0-9]))/i);
         if (parsed) {
             return encapsulateReturn(parsed.splice(-1)[0], urlOrPlainId);
         }
@@ -59,7 +59,7 @@ var asinParser = {
     },
 
     asyncParseAsin: function (urlOrPlainId) {
-        var isPermaLink = /^https?:\/\/([a-zA-Z\d-]+\.){0,}amzn\.to\//.test(urlOrPlainId);
+        var isPermaLink = /^https?:\/\/([a-zA-Z\d-]+\.){0,}amzn\.to\//i.test(urlOrPlainId);
         if (isPermaLink) {
             return redirectTracer(urlOrPlainId).then(function (resolvedUrl) {
                 return asinParser.syncParseAsin(resolvedUrl);
