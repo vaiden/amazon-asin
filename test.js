@@ -14,6 +14,15 @@ describe('amazonAsin', function () {
             });
         });
 
+        it('should return ASIN, rul, tld', function () {
+            var asin = amazonAsin.syncParseAsin("https://www.amazon.co.uk/d/Hair-Gel/Eco-Styler-Olive-Oil-Styling/B003E7UNE4");
+            assert.deepEqual(asin, {
+                ASIN: "B003E7UNE4",
+                url: "https://www.amazon.co.uk/d/Hair-Gel/Eco-Styler-Olive-Oil-Styling/B003E7UNE4",
+                urlTld: "co.uk"
+            });
+        });
+
         it('should return ASIN', function () {
 
             var asin = amazonAsin.syncParseAsin("B01IG0E1F0");
@@ -36,7 +45,6 @@ describe('amazonAsin', function () {
 
     describe('Testing async', function () {
         it('should return ASIN, rul, tld', function () {
-
             return amazonAsin.asyncParseAsin("http://amzn.to/2eEPcFk").then(function (result) {
                     assert.deepEqual(result, {
                         ASIN: 'B00MH78O0M',
@@ -69,8 +77,6 @@ describe('amazonAsin', function () {
                 );
             });
         });
-
-
     });
 
 });
