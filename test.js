@@ -22,6 +22,15 @@ describe('amazonAsin', function () {
                 urlTld: "co.uk"
             });
         });
+        
+        it('should return ASIN, rul, tld', function () {
+            var asin = amazonAsin.syncParseAsin("https://www.amazon.com.mx/Ale-Zavala-Nacimiento-Adorno-Navide%C3%B1o/dp/B07GBDTV2Y");
+            assert.deepEqual(asin, {
+                ASIN: "B07GBDTV2Y",
+                url: "https://www.amazon.com.mx/Ale-Zavala-Nacimiento-Adorno-Navide%C3%B1o/dp/B07GBDTV2Y",
+                urlTld: "com.mx"
+            });
+        });
 
         it('should return ASIN', function () {
 
