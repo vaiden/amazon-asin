@@ -1,6 +1,6 @@
 # Amazon ASIN
 
-[![NPM version](https://img.shields.io/npm/v/amazon-asin.svg?style=flat)](https://npmjs.org/package/amazon-asin) [![NPM downloads](https://img.shields.io/npm/dm/amazon-asin.svg?style=flat)](https://npmjs.org/package/amazon-asin) [![GitHub issues](https://img.shields.io/github/issues/vaiden/amazon-asin.svg)](https://github.com/vaiden/amazon-asin/issues) [![Tests](https://img.shields.io/github/workflow/status/vaiden/amazon-asin/Node.js%20CI/master?label=Tests)](https://github.com/vaiden/amazon-asin/actions/workflows/node.js.yml?query=branch%3Amaster) 
+[![NPM version](https://img.shields.io/npm/v/amazon-asin.svg?style=flat)](https://npmjs.org/package/amazon-asin) [![NPM downloads](https://img.shields.io/npm/dm/amazon-asin.svg?style=flat)](https://npmjs.org/package/amazon-asin) [![GitHub issues](https://img.shields.io/github/issues/vaiden/amazon-asin.svg)](https://github.com/vaiden/amazon-asin/issues) [![tests](https://img.shields.io/github/workflow/status/vaiden/amazon-asin/Node.js%20CI/master?label=tests)](https://github.com/vaiden/amazon-asin/actions/workflows/node.js.yml?query=branch%3Amaster) 
 
 > An efficient NodeJS module to extract Amazon ASIN/ISBN from links. Supports Amazon shortened permalinks
 
