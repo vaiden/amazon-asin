@@ -73,6 +73,18 @@ describe('amazonAsin', function () {
             });
 
         });
+        
+        it('should return ASIN, rul, tld (italy site)', function () {
+            return amazonAsin.asyncParseAsin("https://amzn.eu/d/5dF49o2").then(function (result) {
+                    assert.deepEqual(result, {
+                        ASIN: 'B0899VXM8F',
+                        url: 'https://www.amazon.it/Raspberry-Pi-Computer-8GB-RAM/dp/B0899VXM8F/?_encoding=UTF8&pd_rd_w=cNbYS&content-id=amzn1.sym.7641a319-a1d0-47bb-b9e3-4760aeea2fb9&pf_rd_p=7641a319-a1d0-47bb-b9e3-4760aeea2fb9&pf_rd_r=E45F825WQ1ATY2PC95RE&pd_rd_wg=YAXt9&pd_rd_r=9b02af6c-b18c-41d1-89c0-d077451b3594&ref_=pd_gw_bmx_gp',
+                        urlTld: 'it'
+                    }
+                );
+            });
+
+        });
 
         it('should return ASIN', function () {
             return amazonAsin.asyncParseAsin('B00MH78O0M').then(function (result) {
