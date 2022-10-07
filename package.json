@@ -24,7 +24,7 @@
   "license": "ISC",
   "dependencies": {
     "parse-domain": "^1.1.0",
-    "resolve-redirect": "0.0.3"
+    "resolve-redirects-efficient": "^0.0.4"
   },
   "repository": {
     "type": "git",

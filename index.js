@@ -1,7 +1,7 @@
 'use strict';
 
 var parseDomain = require('parse-domain');
-var redirectTracer = require('resolve-redirect');
+var redirectTracer = require('resolve-redirects-efficient');
 
 /*! amazon-asin by Nitzan Weidenfeld
 *
@@ -51,7 +51,7 @@ var asinParser = {
         }
 
         var parsed = urlOrPlainId.match(/https?:\/\/(www\.)?(.*)amazon\.([a-z\.]{2,6})(\/d\/(.*)|\/(.*)\/?(?:dp|o|gp|-)\/)(aw\/d\/|product\/)?(B[0-9]{1}[0-9A-Z]{8}|[0-9]{9}(?:X|[0-9]))/i);
-       
+
         if (parsed) {
             return encapsulateReturn(parsed.splice(-1)[0], urlOrPlainId);
         }
