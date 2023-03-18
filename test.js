@@ -107,6 +107,17 @@ describe('amazonAsin', function () {
                 );
             });
         });
+
+        it('should return ASIN, rul, tld (a.co shortened url)', function () {
+            return amazonAsin.asyncParseAsin("https://a.co/d/9DweDUD").then(function (result) {
+                assert.deepEqual(result, {
+                        ASIN: "B0B151JYPV",
+                        url: "https://www.amazon.com/dp/B0B151JYPV?ref_=cm_sw_r_cp_ud_dp_950J53CAK5EFM3659QQM",
+                        urlTld: "com"
+                    }
+                );
+            });
+        });
     });
 
 });
