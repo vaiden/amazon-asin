@@ -60,7 +60,7 @@ var asinParser = {
     },
 
     asyncParseAsin: function (urlOrPlainId) {
-        var isPermaLink = /^https?:\/\/([a-zA-Z\d-]+\.){0,}amzn\.(to|eu)\//i.test(urlOrPlainId);
+        var isPermaLink = /^https?:\/\/([a-zA-Z\d-]+\.){0,}(amzn|a)\.(to|eu|co)\//i.test(urlOrPlainId);
         if (isPermaLink) {
             return redirectTracer(urlOrPlainId).then(function (resolvedUrl) {
                 return asinParser.syncParseAsin(resolvedUrl);

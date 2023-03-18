@@ -117,7 +117,6 @@ describe('amazonAsin', function () {
                     }
                 );
             });
-
         });
     });
 
