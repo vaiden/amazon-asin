@@ -41,7 +41,7 @@ Returns a *Promise* that would resolve to:
 }
 ```
 
-Run the example [->](https://runkit.com/embed/t5e0u7wq98gi)
+Run the example [->](https://runkit.com/embed/g3ltcovs011l)
 
 ## The fine print
 
